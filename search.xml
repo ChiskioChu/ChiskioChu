@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Serializable接口奥义</title>
+    <title>Serializable接口</title>
     <url>/2020/11/17/Serializable%E6%8E%A5%E5%8F%A3/</url>
     <content><![CDATA[<p>为什么我的bean实现了一个<code>Serializable</code>接口？</p>
 <p>我搜了搜，很快嗷，都在告诉我这个东西拿来“持久化”。</p>
@@ -56,7 +56,7 @@
 ]]></content>
   </entry>
   <entry>
-    <title>hashmap奥义</title>
+    <title>HashMap总结</title>
     <url>/2020/11/17/hashmap%E5%A5%A5%E4%B9%89/</url>
     <content><![CDATA[<p>数据存储：</p>
 <p>（1）Node[] table哈希桶数组</p>
