@@ -7,12 +7,12 @@
   
   <title>TCP/UDP总结 | Chiskio&#39;s Land</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="端口号 端口号用来识别同一台计算机中进行通信的不同应用程序。 FTP,SSH,SMTP,HTTP等客户端 只用端口来识别某一个通信是不够的，TCP&#x2F;IP或UDP&#x2F;IP通信中通常采用5个信息来识别一个通信：“源IP地址”、“目标IP地址”、“协议号”、“源端口号”、“目标端口号”，只要其中某一项不同就属于不同的通信。 端口号的确定： 标准既定的端口号：知名端口号，分布在0 ~ 1023 时序分配法：">
+  <meta name="description" content="端口号 端口号用来识别同一台计算机中进行通信的不同 应用程序 。 FTP,SSH,SMTP,HTTP等客户端 只用端口来识别某一个通信是不够的，TCP&#x2F;IP或UDP&#x2F;IP通信中通常采用5个信息来识别一个通信：“源IP地址”、“目标IP地址”、“协议号”、“源端口号”、“目标端口号”，只要其中某一项不同就属于不同的通信。 端口号的确定： 标准既定的端口号：知名端口号，分布在0 ~ 1023 时序分配">
 <meta property="og:type" content="article">
 <meta property="og:title" content="TCP&#x2F;UDP总结">
 <meta property="og:url" content="http://example.com/2020/11/19/TCP-UDP%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="Chiskio&#39;s Land">
-<meta property="og:description" content="端口号 端口号用来识别同一台计算机中进行通信的不同应用程序。 FTP,SSH,SMTP,HTTP等客户端 只用端口来识别某一个通信是不够的，TCP&#x2F;IP或UDP&#x2F;IP通信中通常采用5个信息来识别一个通信：“源IP地址”、“目标IP地址”、“协议号”、“源端口号”、“目标端口号”，只要其中某一项不同就属于不同的通信。 端口号的确定： 标准既定的端口号：知名端口号，分布在0 ~ 1023 时序分配法：">
+<meta property="og:description" content="端口号 端口号用来识别同一台计算机中进行通信的不同 应用程序 。 FTP,SSH,SMTP,HTTP等客户端 只用端口来识别某一个通信是不够的，TCP&#x2F;IP或UDP&#x2F;IP通信中通常采用5个信息来识别一个通信：“源IP地址”、“目标IP地址”、“协议号”、“源端口号”、“目标端口号”，只要其中某一项不同就属于不同的通信。 端口号的确定： 标准既定的端口号：知名端口号，分布在0 ~ 1023 时序分配">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://i.loli.net/2020/11/19/7xPgacr4EfGQ3dA.png">
 <meta property="og:image" content="https://i.loli.net/2020/11/19/S85XCncIqUNt3H6.png">
@@ -27,7 +27,7 @@
 <meta property="og:image" content="https://i.loli.net/2020/11/19/q6cfLHMCwN579nx.png">
 <meta property="og:image" content="https://i.loli.net/2020/11/19/BqwyMLCGu3rlWYj.png">
 <meta property="article:published_time" content="2020-11-19T08:47:19.000Z">
-<meta property="article:modified_time" content="2020-11-19T09:11:41.819Z">
+<meta property="article:modified_time" content="2020-11-19T09:14:27.171Z">
 <meta property="article:author" content="Chiskio Chu">
 <meta property="article:tag" content="计算机网络">
 <meta name="twitter:card" content="summary">
@@ -103,7 +103,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="端口号"><a href="#端口号" class="headerlink" title="端口号"></a>端口号</h1><ul>
-<li>端口号用来识别同一台计算机中进行通信的不同<strong>应用程序</strong>。</li>
+<li>端口号用来识别同一台计算机中进行通信的不同 <strong>应用程序</strong> 。</li>
 <li>FTP,SSH,SMTP,HTTP等客户端</li>
 <li>只用端口来识别某一个通信是不够的，TCP/IP或UDP/IP通信中通常采用5个信息来识别一个通信：“源IP地址”、“目标IP地址”、“协议号”、“源端口号”、“目标端口号”，只要其中某一项不同就属于不同的通信。</li>
 <li>端口号的确定：<ul>
@@ -194,7 +194,7 @@
 <ul>
 <li>当发送方得知接收方缓存区已满的时候就停止放松，发送方合适再继续发送数据呢？<ul>
 <li>一种方式是接收方主动发送更新的通知，发送方重新发送数据</li>
-<li>但是如果更新通知在通信过程中丢失，会导致无法再通信，因此发送方会时不时发送一个叫做**<em>窗口探测**</em>的数据段，此数据段仅含一个字节以获取最新的窗口大小信息。</li>
+<li>但是如果更新通知在通信过程中丢失，会导致无法再通信，因此发送方会时不时发送一个叫做 <strong><em>窗口探测</em></strong> 的数据段，此数据段仅含一个字节以获取最新的窗口大小信息。</li>
 </ul>
 </li>
 </ul>
@@ -229,16 +229,16 @@
 <p><img src="https://i.loli.net/2020/11/19/LX3aCAqSfDoEJTQ.png"></p>
 <h3 id="超时事件一定是网络拥塞"><a href="#超时事件一定是网络拥塞" class="headerlink" title="超时事件一定是网络拥塞?"></a>超时事件一定是网络拥塞?</h3><ul>
 <li>也有可能是某个数据包丢失或损害导致了超时事件。</li>
-<li>可以通过**<em>冗余ACK**</em>来处理以上情况。</li>
-<li><strong><em>举个例子</em></strong>：如果A给B发送<code>M1, M2, M3, M4, M5...N</code>个数据包，如果B收到了<code>M1, M2, M4....</code>却始终没有收到M3，这个时候就会重复确认M2，意在告诉A,M3还没收到，可能是丢失了。</li>
+<li>可以通过 <strong><em>冗余ACK</em></strong> 来处理以上情况。</li>
+<li><strong><em>举个例子</em></strong> ：如果A给B发送<code>M1, M2, M3, M4, M5...N</code>个数据包，如果B收到了<code>M1, M2, M4....</code>却始终没有收到M3，这个时候就会重复确认M2，意在告诉A,M3还没收到，可能是丢失了。</li>
 </ul>
 <p><img src="https://i.loli.net/2020/11/19/q6cfLHMCwN579nx.png"></p>
 <ul>
-<li>当A连续收到了三个确认M2的ACK，且M3超时事件还没发生。A就知道M3可能丢失了，这个时候A就不必等待M3设置的计时器到期了，而是**<em>快速重传**</em>M3。并且把阈值设置为MAX的一半，即阈值 = MAX/2，但是这个时候并非把控制窗口N设置为1，而是让N = 阈值，N在一个一个增长。</li>
+<li>当A连续收到了三个确认M2的ACK，且M3超时事件还没发生。A就知道M3可能丢失了，这个时候A就不必等待M3设置的计时器到期了，而是 <strong><em>快速重传</em></strong> M3。并且把阈值设置为MAX的一半，即阈值 = MAX/2，但是这个时候并非把控制窗口N设置为1，而是让N = 阈值，N在一个一个增长。</li>
 </ul>
 <p><img src="https://i.loli.net/2020/11/19/BqwyMLCGu3rlWYj.png"></p>
 <ul>
-<li>我们也把这种情况称之为**<em>快速恢复**</em>。而这种具有快速恢复的TCP版本称之为TCP Reno。</li>
+<li>我们也把这种情况称之为 <strong><em>快速恢复</em></strong>。而这种具有快速恢复的TCP版本称之为TCP Reno。</li>
 <li>还有另外一种TCP版本，无论是收到三个相同的ACK还是发生超时事件，都把拥塞窗口的大小设为1，**<em>从最初状态开始**</em>，这种版本的TCP我们称之为TCP Tahoe。</li>
 </ul>
 <h1 id="UDP首部格式"><a href="#UDP首部格式" class="headerlink" title="UDP首部格式"></a>UDP首部格式</h1><ul>
@@ -252,7 +252,7 @@
 <li>目标端口号：16位</li>
 <li>序列号：发送数据的位置，32位，每发送一次就累加一次该数据字节数的大小。建立连接时由计算机生成的随机数作为初始值通过SYN包传给接收端主机。SYN和FIN包虽然不携带数据，但是会作为一个字节增加对应的序列号。</li>
 <li>确认应答号：32位，指下一次应该收到的数据序列号。</li>
-<li>数据偏移 <code>Data Offset</code>：表示TCP所传输的<strong>数据部分</strong>应该从TCP包的哪个位开始，可以看作TCP首部的长度，4位，单位为4字节，一般没有选项字段的话就设置为5，表示首部为20字节。</li>
+<li>数据偏移 <code>Data Offset</code>：表示TCP所传输的 <strong>数据部分</strong> 应该从TCP包的哪个位开始，可以看作TCP首部的长度，4位，单位为4字节，一般没有选项字段的话就设置为5，表示首部为20字节。</li>
 <li>保留：一般设置为0。</li>
 <li>控制位（<code>Control Flag</code>）：8位，重要的几位：</li>
 </ul>
@@ -290,7 +290,7 @@
 <li>如果计算校核字段在内的所有数据的16位和以后得到的结果是“16位全部为1”说明收到的数据正确（即取反后为0）。</li>
 </ol>
 <h2 id="窗口大小和吞吐量"><a href="#窗口大小和吞吐量" class="headerlink" title="窗口大小和吞吐量"></a>窗口大小和吞吐量</h2><ul>
-<li>TCP通信的最大吞吐量由<strong>窗口大小</strong>和<strong>往返时间</strong>（RTT）决定。</li>
+<li>TCP通信的最大吞吐量由 <strong>窗口大小</strong> 和 <strong>往返时间</strong>（RTT）决定。</li>
 <li>Tmax表示最大吞吐量，单位为（比特/秒），W为窗口大小，单位为字节（8位字），RTT为秒<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Tmax &#x3D; W&#x2F;RTT</span><br></pre></td></tr></table></figure></li>
 <li>以上的Tmax表示一个连接的最大吞吐量，因此web浏览器一般为了提高吞吐量一般会建立4个连接。</li>
 </ul>
