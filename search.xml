@@ -111,6 +111,7 @@
 </li>
 <li>端口号的处理是根据每个传输协议的不同而进行的，数据到达IP层后，会先检查IP首部中的协议号，再传给相应协议的模块，TCP模块和UDP模块。</li>
 </ul>
+<a id="more"></a>
 <h1 id="UDP"><a href="#UDP" class="headerlink" title="UDP"></a>UDP</h1><ul>
 <li><strong><em>User Datagram Protocal</em></strong></li>
 <li>有点类似于用户说说么听什么的机制，面向无连接，细节控制采用UDP的应用程序去处理</li>
