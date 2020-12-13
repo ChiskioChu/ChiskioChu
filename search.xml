@@ -54,6 +54,9 @@
 <li>序列化会不安全，就像电报也会被截取一样。</li>
 </ol>
 ]]></content>
+      <tags>
+        <tag>Java</tag>
+      </tags>
   </entry>
   <entry>
     <title>HashMap总结</title>
@@ -95,6 +98,9 @@
 <p><img src="https://i.loli.net/2020/11/17/erLVQXmpJIiN3Fs.png" alt="hashmap04.png"></p>
 <p>这个设计确实非常的巧妙，既省去了重新计算<code>hash</code>值的时间，而且同时，由于新增的1bit是0还是1可以认为是随机的，因此<code>resize</code>的过程，均匀的把之前的冲突的节点分散到新的<code>bucket</code>了。这一块就是JDK1.8新增的优化点。有一点注意区别，JDK1.7中<code>rehash</code>的时候，旧链表迁移新链表的时候，如果在新表的数组索引位置相同，则链表元素会倒置，但是从上图可以看出，JDK1.8不会倒置（维持秩序）。</p>
 ]]></content>
+      <tags>
+        <tag>Java</tag>
+      </tags>
   </entry>
   <entry>
     <title>TCP/UDP总结</title>
